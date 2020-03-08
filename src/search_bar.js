@@ -2,7 +2,7 @@ import React, { Component } from "react"
 
 class SearchBar extends Component {
   handleUpdate = (e) => {
-    console.log(e.target.value)
+    this.props.searchFunction(e.target.value)
   }
   render(){
     return(
@@ -11,7 +11,7 @@ class SearchBar extends Component {
   }
 
 }
-
+ 
 
 
 export default SearchBar
